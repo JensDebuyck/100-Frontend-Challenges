@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #ffdeab;
+    margin: 0;
+    font-family:'Inter Tight',sans-serif;
+}
+
+#card {
+    position: relative;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: grid;
+    justify-items: center;
+}
+
+#header {
+    position: relative;
+    width: 100%;
+    background-color: #8f2954;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    height: 150px;
+}
+
+.circle-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    display: grid;
+    place-items: center;
+    z-index: 10;
+    position: relative;
+    background-color: #8f2954;
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#naam{
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    justify-items: center;
+}
+h1, h2, p {
+    margin: 0;
+    font-family: 'Inter Tight';
+}
+
+h1 {
+    font-size: 1.5em;
+    
+}
+
+span {
+    font-size: 1em;
+    color: #d8d2d2;
+}
+
+#media{
+    width: 80%;
+    height: 100%;
+    margin-top:30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    justify-content:center;
+    margin-left: 10px;
+}
+
+
+.logo{
+    width: 25px;
+    height: 25px;
+}
+
+#tekst{
+    width:80%;
+    margin-top:30px;
+    text-align:center;
+    font-size:0.9em;
+    height: 100px;
+}
+
+#knoppen{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+#follow {
+    border-radius: 50px; /* Maak de knop rond */
+    background-color: #8f2954; /* Achtergrondkleur */
+    width: 120px; /* Brete van de knop */
+    height: 30px; /* Hoogte van de knop */
+    border:none;
+    color:white;
+    font-size:1em;
+    margin-right: 60px;
+}
+
+#message {
+    border-radius: 50px; /* Maak de knop rond */
+    background-color: white; /* Achtergrondkleur */
+    width: 120px; /* Brete van de knop */
+    height: 30px; /* Hoogte van de knop */
+    border:none;
+    border: solid 1px gray;
+    color:gray;
+    font-size:1em;
+}
+
+#follow:hover{
+    background-color: #a0446a;
+}
+
+#message:hover{
+    background-color: #8f2954;
+    color:white;
+    border:no
+}
