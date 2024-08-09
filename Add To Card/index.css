@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+  font-family: "Merryweather";
+}
+
+#container {
+  display: flex;
+  align-items: flex-start; /* Zorgt ervoor dat de bovenste elementen op één lijn staan */
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Ruimte tussen de kleine foto's */
+  margin-right: 20px;
+}
+
+.transparant {
+  opacity: 0.7;
+}
+
+.transparant:hover {
+  opacity: 1;
+}
+
+#center img {
+  width: 100%; /* Breedte van de grote foto */
+  height: auto;
+}
+
+#right {
+  width: 800px; /* Bepaal de breedte voor de content aan de rechterkant */
+  margin-left: 50px; /* Optionele marge om wat ruimte tussen het centrale en rechtergedeelte te creëren */
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1a75ff;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #000000;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.price-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px; /* Kleinere ruimte tussen de prijzen */
+  margin: 0; /* Verwijdert eventuele extra marge van de flex-container */
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #000000;
+  margin: 0; /* Verwijdert standaard marge */
+}
+
+.original-price {
+  font-size: 20px;
+  color: #888888;
+  text-decoration: line-through;
+  margin: 0; /* Verwijdert standaard marge */
+}
+
+.discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  width: 61px;
+  height: 31px;
+  background: #aaccff;
+  border-radius: 4px;
+  font-weight: 700;
+  color: #1a75ff;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.maat{
+    /* Choose size */
+
+position: absolute;
+width: 300px;
+height: 20px;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+
+color: #000000;
+
+margin-top: 80px;
+
+
+}
+
+.size-container {
+    display: flex;
+    gap: 10px; /* Ruimte tussen de maatopties */
+    margin-top: 20px; /* Ruimte boven de maatopties */
+  }
+  
+  .size-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .size-option:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .size-option.selected {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .add-to-bag {
+    background-color: #007bff; /* Blauwe achtergrondkleur */
+    color: #ffffff; /* Witte tekstkleur */
+    font-size: 18px; /* Tekstgrootte */
+    font-weight: bold; /* Vetgedrukte tekst */
+    padding: 15px 30px; /* Ruime padding voor een grote knop */
+    border: none; /* Geen rand */
+    border-radius: 5px; /* Afgeronde hoeken */
+    cursor: pointer; /* Cursor verandert in een handje bij hover */
+    transition: background-color 0.3s, transform 0.3s; /* Animatie voor hover-effecten */
+    display: inline-block; /* Zorgt ervoor dat de knop de padding respecteert */
+    margin-top: 250px; /* Ruimte boven de knop */
+    width:730px;
+ }
+  
+  .add-to-bag:hover {
+    background-color: #0056b3; /* Donkerdere blauwe kleur bij hover */
+    transform: scale(1.05); /* Vergroot de knop iets bij hover */
+  }
+  
+  .add-to-bag:active {
+    background-color: #004494; /* Nog donkerdere blauwe kleur bij klikken */
+    transform: scale(1); /* Terug naar originele grootte bij klikken */
+  }
+  
