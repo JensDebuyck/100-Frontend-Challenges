@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<bds/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us! Whether you have <br>questions, feedback, or just want to say hello,<br> we're here for you.</p>
+            <div id="address">
+                <strong>Windler, Lockman and McClure</strong>
+                <p>3629 N Cole Rd, Boise, Illinois</p>
+            </div>
+        </div>
+        <div id="right">
+            <h2>Send us a Message</h2>
+            <form action="">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Phone">
+                
+                <h3>Preferred contact method of communication</h3>
+                <div class="radio-group">
+                  <label>
+                      <input type="radio" name="contact_method" value="email" required>
+                      <span class="custom-radio"></span> Email
+                  </label>
+                  <label>
+                      <input type="radio" name="contact_method" value="phone">
+                      <span class="custom-radio"></span> Phone
+                  </label>
+              </div>
+
+                <textarea name="message" placeholder="Message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

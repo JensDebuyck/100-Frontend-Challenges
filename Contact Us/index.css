@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    184deg,
+    rgba(72, 44, 229, 1) 0%,
+    rgba(71, 26, 148, 1) 49%,
+    rgba(73, 6, 56, 1) 100%
+  );
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+
+#container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  border-radius: 10px;
+  overflow: hidden;
+  gap:200px;
+}
+
+#left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+#left h1 {
+  margin-top: 0;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: px;
+}
+
+#left p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 25px;
+  color: #fbedff;
+}
+
+#address {
+  background: #ff3c86;
+  padding-left: 10px;
+  margin-top: 40px;
+  border-radius: 8px;
+  max-width: 300px;
+  max-height: 100px;
+  color: white;
+  padding-top: 10px;
+}
+
+#adress strong {
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+
+#address p {
+  margin: 2px;
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+
+#right {
+  flex: 1;
+  padding:20px;
+  background: white;
+  color: #333;
+  border-radius: 20px;
+}
+
+#right h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+#right h3 {
+  opacity: 0.5;
+  font-weight: 100;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* Maak een aangepaste radiobutton */
+.custom-radio {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #462ad9; /* Kleur van de buitenrand */
+  border-radius: 50%;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* Inhoud van de radiobutton wanneer geselecteerd */
+.custom-radio::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #462ad9; /* Kleur van de ingevulde cirkel */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* Wanneer de radiobutton is geselecteerd, toon de inhoud */
+input[type="radio"]:checked + .custom-radio::after {
+  opacity: 1;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background-color: #ff3c86;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+input[type="submit"]:hover {
+  background-color: #e83278;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  margin-top: 20px;
+  margin-bottom:50px;
+}
+
+.radio-group label {
+    font-size: 16px;          /* Lettergrootte van de tekst */
+    color: #333;              /* Tekstkleur */
+    margin-right: 50px;       /* Ruimte tussen de opties */
+    cursor: pointer;  
+    opacity: 0.8;        /* Wijzig de cursor bij hover */     /* Verticale uitlijning */
+}
